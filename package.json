@@ -1,0 +1,26 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Hệ thống design token với công cụ chuyển đổi tự động từ CSS variables sang định dạng JSON.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "style-dictionary build --config sd.config.mjs",
+    "build:watch": "style-dictionary build --config sd.config.mjs --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieud4l/design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieud4l/design-system/issues"
+  },
+  "homepage": "https://github.com/hieud4l/design-system#readme",
+  "devDependencies": {
+    "style-dictionary": "^5.2.0"
+  }
+}
