@@ -1,0 +1,22 @@
+# Python dependencies for Design System Expert skill
+
+# Color manipulation and validation
+colorama==0.4.6
+
+# JSON schema validation
+jsonschema==4.20.0
+
+# YAML parsing (for Style Dictionary configs)
+PyYAML==6.0.1
+
+# CSS parsing
+tinycss2==1.2.1
+
+# File system operations
+pathlib2==2.3.7
+
+# Regular expressions (built-in, but listed for reference)
+# re
+
+# JSON handling (built-in)
+# json
