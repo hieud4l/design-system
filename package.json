@@ -1,0 +1,27 @@
+{
+    "name": "design-system",
+    "version": "1.0.0",
+    "description": "Design system with Style Dictionary and Tailwind CSS v4",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build:tokens": "style-dictionary build --config sd.config.mjs",
+        "build:tailwind": "tailwindcss -i ./build/css/tailwind.css -o ./build/css/tailwind.output.css",
+        "build": "npm run build:tokens && npm run build:tailwind",
+        "watch:tokens": "style-dictionary build --config sd.config.mjs --watch",
+        "watch:tailwind": "tailwindcss -i ./build/css/tailwind.css -o ./build/css/tailwind.output.css --watch",
+        "dev": "npm run build:tokens && npm run watch:tailwind"
+    },
+    "keywords": [
+        "design-system",
+        "style-dictionary",
+        "tailwindcss",
+        "design-tokens"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "style-dictionary": "^5.2.0",
+        "tailwindcss": "^4.0.0"
+    }
+}
