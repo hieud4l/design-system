@@ -139,6 +139,79 @@ export default {
                 destination: 'tailwind.preset.js',
                 format: 'tailwind/preset'
             }]
+        },
+        // Android XML Resources (colors.xml, dimens.xml)
+        android: {
+            transformGroup: 'android',
+            buildPath: 'build/android/',
+            files: [
+                {
+                    destination: 'colors.xml',
+                    format: 'android/colors',
+                    filter: {
+                        type: 'color'
+                    }
+                },
+                {
+                    destination: 'dimens.xml',
+                    format: 'android/dimens',
+                    filter: (token) => ['fontSize', 'dimension', 'borderRadius', 'spacing'].includes(token.type)
+                },
+                {
+                    destination: 'font_dimens.xml',
+                    format: 'android/fontDimens',
+                    filter: {
+                        type: 'fontSize'
+                    }
+                }
+            ]
+        },
+        // Android Compose (Kotlin)
+        compose: {
+            transformGroup: 'compose',
+            buildPath: 'build/compose/',
+            files: [
+                {
+                    destination: 'Color.kt',
+                    format: 'compose/object',
+                    filter: {
+                        type: 'color'
+                    },
+                    options: {
+                        className: 'AppColors',
+                        packageName: 'com.example.designsystem.tokens'
+                    }
+                },
+                {
+                    destination: 'Typography.kt',
+                    format: 'compose/object',
+                    filter: (token) => ['fontSize', 'fontFamily', 'lineHeight', 'letterSpacing'].includes(token.type),
+                    options: {
+                        className: 'AppTypography',
+                        packageName: 'com.example.designsystem.tokens'
+                    }
+                },
+                {
+                    destination: 'Dimension.kt',
+                    format: 'compose/object',
+                    filter: (token) => ['dimension', 'borderRadius', 'spacing'].includes(token.type),
+                    options: {
+                        className: 'AppDimensions',
+                        packageName: 'com.example.designsystem.tokens'
+                    }
+                },
+                {
+                    destination: 'Shadow.kt',
+                    format: 'compose/object',
+                    filter: {
+                        type: 'boxShadow'
+                    },
+                    options: {
+                        className: 'AppShadows',
+                        packageName: 'com.example.designsystem.tokens'
+                    }
+                }
+            ]
         }
     }
 };
