@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <dimen name="max_width_container">20480.00dp</dimen>
+  <dimen name="breakpoint_xxs">5120.00dp</dimen>
+  <dimen name="breakpoint_xs">9600.00dp</dimen>
+</resources>

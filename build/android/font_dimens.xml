@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <dimen name="text_xs">calc(var(--spacing) * 3)</dimen>
+  <dimen name="text_sm">calc(var(--spacing) * 3.5)</dimen>
+  <dimen name="text_md">calc(var(--spacing) * 4)</dimen>
+  <dimen name="text_lg">calc(var(--spacing) * 4.5)</dimen>
+  <dimen name="text_xl">calc(var(--spacing) * 5)</dimen>
+  <dimen name="text_display_xs">calc(var(--spacing) * 6)</dimen>
+  <dimen name="text_display_sm">calc(var(--spacing) * 7.5)</dimen>
+  <dimen name="text_display_md">calc(var(--spacing) * 9)</dimen>
+  <dimen name="text_display_lg">calc(var(--spacing) * 12)</dimen>
+  <dimen name="text_display_xl">calc(var(--spacing) * 15)</dimen>
+  <dimen name="text_display_2xl">calc(var(--spacing) * 18)</dimen>
+</resources>
